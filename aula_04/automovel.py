@@ -8,8 +8,7 @@ class Automovel:
         if len(p_marca) == 0:
             raise ValueError('A marca foi fornecida incorretamente')
         self.__marca = p_marca
-    
-    
+
 class Automovel2:
     def __init__(self):
         self.marca = 'julio'
