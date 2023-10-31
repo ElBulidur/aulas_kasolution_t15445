@@ -15,7 +15,6 @@ arquivo.write('nomes\n')
 
 arquivo.close()
 
-
 with open('novos.log', 'w') as file:
     file.write("INFO - fiz isso!!!\n")
     file.write('ERROR - deu erro!!!\n')

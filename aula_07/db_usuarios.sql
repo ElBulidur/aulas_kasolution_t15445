@@ -1,0 +1,2 @@
+CREATE DATABASE db_usuarios
+    DEFAULT CHARACTER SET = 'utf8mb4';
