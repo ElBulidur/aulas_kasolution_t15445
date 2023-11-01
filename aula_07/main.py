@@ -1,17 +1,28 @@
-import mysql.connector
+from manage import Manager
 
-# class Conn:
-#     def __init__(self):
-#         try:
-            
-#             conn_mysql = mysql.connector.connect(
-#                 host='localhost',
-#                 user='root',
-#                 password='root',
-#                 database='db_funcionarios'
-#             )
-            
-#             print("Conexao realizada com sucesso!")
-                
-#         except Exception as e:
-#             print(e)
+trabalho = Manager()
+
+# trabalho.pegar_conexao() # ativar conexao
+
+# trabalho.criar_usuario('Andre', 'Bolaquadrada') # criar usuario
+
+# trabalho.atualizar_usuario('Pereira', 'bolinhadegude', 2) # atualizar usuario
+
+# trabalho.deletar_usuario(3) # deletar usuario
+
+usuarios = [
+    ('Julio', 'biscoito'),
+    ('Andre', '234hnd'),
+    ('Marcello', 'jsaodsda'),
+    ('Fabio', 'jhsadnlsa')
+]
+
+for usuario, senha in usuarios:
+    pass
+    # trabalho.pegar_conexao() 
+    # trabalho.criar_usuario(usuario, senha)
+    
+
+trabalho.pegar_usuario_por_id(5)
+ 
+trabalho.pegar_todos_usuarios()
